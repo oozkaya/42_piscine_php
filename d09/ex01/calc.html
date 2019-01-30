@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculatrice</title>
+</head>
+<body>
+	<form id="form">
+		<input type="text" id="left">
+		<select id="op">
+			<option value="add">+</option>
+			<option value="sub">-</option>
+			<option value="prod">*</option>
+			<option value="div">/</option>
+			<option value="mod">%</option>
+		 </select>
+		<input type="text" id="right">
+		<input type="submit" value="Try me!">
+	</form>
+	<script>
+		var left = document.querySelector('#left');
+		var right = document.querySelector('#right');
+		var op = document.querySelector('#op')
+		setInterval(function(){ alert("Please, use me..."); }, 30000);
+		var res = 0;
+
+		document.getElementById('form').addEventListener('submit', do_op);
+
+		function do_op(event)
+		{
+			event.preventDefault();
+			var nb1 = Number(left.value);
+			var nb2 = Number(right.value);
+			if (isNaN(nb1) || isNaN(nb2) || nb1 < 0 || nb2 < 0)
+			{
+				alert("Error :(");
+				return ;
+			}
+			switch (op.value)
+			{
+				case "add":
+					res = nb1 + nb2;
+					break;
+				case "sub":
+					res = nb1 - nb2;
+					break;
+				case "prod":
+					res = nb1 * nb2;
+					break;
+				case "div":
+					if (nb2 == 0)
+					{
+						alert("It’s over 9000!");
+						console.log("It’s over 9000!")
+						return ;
+					}
+					res = nb1 / nb2;
+					break;
+				case "mod":
+					if (nb2 == 0)
+					{
+						alert("It’s over 9000!");
+						console.log("It’s over 9000!")
+						return ;
+					}
+					res = nb1 % nb2;
+					break;
+				default:
+					break;
+			}
+			alert(res);
+			console.log(res);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../../css/login.css">
+        <link rel="stylesheet" href="../../css/index.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav" role="navigation">
+                <ul class="topmenu">
+                    <li><a href="../../index.php">Accueil</a></li>
+                    <li><a href="create.html">Créer un compte</a></li>
+                    <li><a href="modif.html">Modifier mot de passe</a></li>
+                </ul>
+            </header>
+            <div class="form">
+            <form action="login.php" method="post">
+            Email: <input type="text" name="email" value=""/>
+            <br />
+            <br />
+            Mot de passe: <input type="password" name="passwd" value=""/>
+            <input type="submit" name="submit" value="OK"/>
+            <br /><br />
+            <input type="submit" name="delete" value="Supprimer le compte" />
+        </div>
+        <div class="footer">
+            <p>
+                &copy; Oozkaya & Pespalie - 2019
+            </p>
+        </div>
+    </body>
+</html>

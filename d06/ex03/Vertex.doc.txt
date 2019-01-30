@@ -1,0 +1,14 @@
+<- Vertex ----------------------------------------------------------------------
+This class handles mathematical vertexes.
+
+We represent a vertex according to five characteristics:
+• x axis coordinate (mandatory)
+• y axis coordinate (mandatory)
+• z depth coordinate (madatory)
+• w homogeneous coordinate (optional, default: 1.0)
+• color, from an instance of the Color Class (optional, default: White)
+
+Getters and Setters available for each attributes.
+
+This class doesn't have public methods, so essentially each Vertex is immutable.
+---------------------------------------------------------------------- Vertex ->

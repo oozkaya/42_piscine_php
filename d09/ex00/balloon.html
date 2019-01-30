@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon</title>
+	<style>
+		.balloon {
+			width: 200px;
+			height: 200px;
+			background-color: red;	
+			border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="balloon"></div>
+	<script>
+		var balloon = document.querySelector('.balloon');
+		var colors = new Array('red', 'green', 'blue');
+		var i = 0;
+		var size = 200;
+
+		balloon.addEventListener('click', onClick);
+		balloon.addEventListener('mouseout', onMouseOut);
+
+		function onClick()
+		{
+			if (++i > 2)
+				i = 0;
+			if ((size += 10) > 420)
+				size = 200;
+			balloon.style.backgroundColor = colors[i];
+			balloon.style.height = size + 'px';
+			balloon.style.width = size + 'px';
+		}
+		function onMouseOut()
+		{
+			if (--i < 0)
+				i = 2;
+			if ((size -= 5) < 200)
+				size = 200;
+			balloon.style.backgroundColor = colors[i];
+			balloon.style.height = size + 'px';
+			balloon.style.width = size + 'px';
+		}
+	</script>
+</body>
+</html>

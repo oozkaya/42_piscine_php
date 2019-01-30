@@ -1,0 +1,46 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class handles space 3D Vectors.
+
+A vector is represented by the following characteristics:
+• x magnitude
+• y magnitude
+• z magnitude
+• w coordinate (always 0.0)
+
+Getters available for each attributes. (No Setters to change the vector though)
+
+An instance is contructed from two Vertex:
+• ’dest’: the vector’s destination vertex, mandatory
+• ’orig’: the vector’s origin vertex, optional,
+	 	  by default is worth a new instance of the x=0, y=0, z=0, w=1 vertex.
+
+The class provides the following methods :
+
+• float magnitude();
+	Returns the vector’s length (or "norm").
+
+• Vector normalize();
+	Returns a normalized version of the vector. If the vector is
+	already normalized, returns a fresh copy of the vector.
+
+• Vector add( Vector $rhs );
+	Returns the sum vector of both vectors.
+
+• Vector sub( Vector $rhs );
+	Returns the difference vector of both vectors.
+
+• Vector opposite();
+	Returns the opposite vector.
+
+• Vector scalarProduct( $k );
+	Returns the multiplication of the vector with a scalar.
+
+• float dotProduct( Vector $rhs );
+	Returns the scalar multiplication of both vectors.
+
+• float cos( Vector $rhs );
+	Returns the angle’sAppendix cosine between both vectors.
+
+• Vector crossProduct( Vector $rhs );
+	Returns the cross multiplication of both vectors (right-hand mark!)
+---------------------------------------------------------------------- Vector ->

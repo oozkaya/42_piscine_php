@@ -1,0 +1,68 @@
+TABLE
+{
+	width: 80%;
+	height: 80%;
+	min-width: 20%;
+	min-height: 20%;
+}
+
+HTML
+{
+	background-color: black;
+}
+
+H1
+{
+	text-align: center;
+	color: white;
+}
+
+BODY
+{
+	background-color:black;
+}
+
+TD
+{
+	border: 1px solid black;
+	color:black;
+}
+
+TABLE .autres_nonmetaux { background-color:#A0FFA0; }
+TABLE .metaux_alcalins { background-color:#FFCC33; }
+TABLE .metaux_alcalinoterreux { background-color:#FFFF44; }
+TABLE .metaux_transition { background-color:#DDBBBB; }
+TABLE .metaux_posttransition { background-color:#99DDCC; }
+TABLE .lanthanides { background-color:#FFBB99; }
+TABLE .actinides { background-color:#EEBBDD; }
+TABLE .metalloides { background-color:#77DD88; }
+TABLE .non_metaux { background-color:#22FF22; }
+TABLE .gaz_rares { background-color:#77CCFF; }
+TABLE .inconnus { background-color:#DDDDDD; }
+
+.symbole
+{
+	font-weight: bold;
+	text-align: center;
+	font-size:2vw;
+}
+
+.num
+{
+	text-align: left;
+	font-size:1vw;
+}
+
+.mol
+{
+	text-align: right;
+	font-size:1vw;
+}
+
+.FOOTER
+{
+	font-family: monospace;
+	text-align: right;
+	font-style: italic;
+	color: white;
+}

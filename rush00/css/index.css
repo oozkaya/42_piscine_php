@@ -1,0 +1,188 @@
+* {box-sizing: border-box;}
+body {
+    margin: 0;
+    background: rgb(191, 191, 207);
+    background-size: 10px 10px;
+}
+.nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.nav .topmenu {
+    background: rgba(255,255,255,.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.topmenu > li > a {
+    font-family: 'Exo 2', sans-serif;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    font-weight: bold;
+    color: #003559;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+}
+.topmenu > li > a:hover {
+    color: rgb(214, 45, 49);
+}
+.has-children{
+    position: relative;
+}
+.has-children:hover > .sous-menu{
+    display: flex;
+}
+.sous-menu{
+    display:none;
+    flex-flow: column wrap;
+    min-width: 108px;
+    position: absolute;
+    background-color:rgb(107, 107, 133);
+}
+.sous-menu.is-active{
+    display: flex;
+}
+.sous-menu a{
+    text-align: justify;
+    color: black;
+    font-family: 'Exo 2', sans-serif;
+    margin:0.5em;
+}
+.sous-menu > li > a:hover {
+    color: rgb(214, 45, 49);
+}
+.sous-menu .sous-menu{
+    top: 0px;
+    left: 100%;
+}
+#client{
+    position: relative;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+#nouser{
+    position: relative;
+    margin-left: 25%;
+    margin-top: 3%
+}
+#noorders{
+    position: relative;
+    margin-left: 25%;
+    margin-top: 0%;
+}
+#admin{
+    position: relative;
+    margin-left: 20%;
+}
+#add_admin{
+    position: relative;
+    margin-left: 20%;
+}
+form #client{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+#order{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 2%;
+}
+#products{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 2%;
+}
+#add{
+    display: flex;
+    margin-left: 22%;
+    position: relative;
+}
+.container{
+    text-align: center;
+    width: 100%;
+}
+.container #poke{
+    margin-top: 3%;
+    width: 500px;
+}
+.container h1{
+    text-align: center;
+    color: rgb(21, 59, 110);
+}
+.tab_panier{
+    display: block;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+table{
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(155, 214, 251);
+    color: white;
+    text-align: center;
+  }
+.footer p{
+    text-align: right;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #003559;
+    padding-right: 30px;
+}
+.contact > h1 {
+    text-align: center;
+    color: #003559;
+    font-size: 3em;
+    font-weight: bold;
+}
+.contact > p {
+    text-align: center;
+    color: #003559;
+    font: 1em Georgia, serif;
+}
+p #shop{
+    width:600; 
+    height:450;
+}
+@media(max-width: 450px){
+    .sous-menu{
+        position: static;
+    }
+    .sous-menu a{
+        text-align: center;
+    }
+    .nav .topmenu{
+        flex-flow: column wrap;
+    }
+    .img{
+        position: static;
+    }
+}

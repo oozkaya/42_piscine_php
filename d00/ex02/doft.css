@@ -1,0 +1,177 @@
+
+
+HTML, BODY
+{
+	width: 1700px;
+	max-height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#505050;
+}
+
+HEADER
+{
+	background-color:#909090;
+	height: 150px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+
+#day42
+{
+	margin-top: 15px;
+	width: 500px;
+	height: 120px;
+	padding-left: 10px;
+}
+
+#loupe
+{
+	position: relative;
+	height: 160px;
+	width: 300px;
+	left: 30px;
+	top: 15px;
+	float: right;
+}
+
+#reload
+{
+	position: relative;
+	right: -10px;
+	top: 10px;
+	margin-left: 20px;
+	height : 20px;
+	width: 20px;
+	float: right;
+}
+
+#close
+{
+	position: relative;
+	right: 10px;
+	top: 120px;
+	height: 20px;
+	width: 20px;
+	float: right;
+}
+
+.nav1
+{
+	position: relative;
+	top: 20px;
+	left: 30px;
+	width: 170px;
+	height: 500px;
+	background-color:#909090;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+#arrow, #main, #oeil, #outil, #chat-icon
+{
+	position: relative;
+	top: 10px;
+	left: 40px;
+	height: 85px;
+	width: 90px;
+}
+
+#oeil
+{
+	border-style: solid;
+	border-width: 6px;
+	border-color: red;
+	border-radius: 5px;
+}
+
+.screen
+{
+	position: relative;
+	top: -480px;
+	left: 230px;
+	width: 1240px;
+	height: 700px;
+	background-color:#909090;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+#cluster
+{
+	position: relative;
+	top: 10px;
+	left: 10px;
+	width: 1220px;
+	height: 680px;
+}
+
+.nav2
+{
+	position: relative;
+	top: -1180px;
+	left: 1500px;
+	width: 170px;
+	height: 500px;
+	background-color:#909090;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+#book
+{
+	position: relative;
+	top: 15px;
+	left: 40px;
+	height: 120px;
+	width: 85px;
+}
+
+#towel
+{
+	position: relative;
+	top: 85px;
+	left: -45px;
+	height: 60px;
+	width: 75px;
+}
+
+.brique
+{
+	position: relative;
+	top: 85px;
+	left: 10px;
+	width: 150px;
+	background-image: url("resources/brick.jpg");
+	background-repeat: round;
+}
+
+#pop
+{
+	position: relative;
+	border: 5px solid #8cfd8e;
+	background-color: #8cfd8e;
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px black;
+	width: 570px;
+	height: 170px;
+	margin-left: 500px;
+	top: -1060px;
+	right: 540px;
+}
+
+#text
+{
+	position: relative;
+	top: -20px;
+	left: 10px;
+	font-size: 130%;
+}
+
+#submit
+{
+	position: relative;
+	bottom: 30px;
+	left: 10px;
+}
